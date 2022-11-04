@@ -15,6 +15,8 @@ client.on("ready", ()=> {
 
 client.on("messageCreate", (message) => {
 
+    //tiktok Parser
+
     if(message.content.startsWith(`https://www.tiktok.com/`)) {
         const urlf = message.content.slice(0,11)
         const urlb = message.content.slice(12, message.content.length)
@@ -40,6 +42,10 @@ client.on("messageCreate", (message) => {
 
     if(command === `rsnl`) {
         message.channel.send(`You're doing great RSNL!`)
+    }
+
+    if(command === `sami`) {
+        message.channel.send(`You doin anything later? You're kinda hot :nosebleedgirl: `)
     }
 
 
