@@ -42,10 +42,16 @@ client.on("messageCreate", (message) => {
 
 //responses
 
-    const responses = [`You're doing great ${command}`, `You got this ${command}`, `If I were you I personally wouldn't let that slide ${command}`]
+    const responses = [
+        `You're doing great ${command}`, 
+        `You got this ${command}`, 
+        `If I were you I personally wouldn't let that slide ${command}`
+]
     const randomChoice = (max) => {
         return Math.floor(Math.random() * max);
     }
+
+    console.log(responses[randomChoice(responses.length)])
 
 
     if(command === `rsnl` || 'sami' || 'jotaro' || 'kira') {
