@@ -40,8 +40,16 @@ client.on("messageCreate", (message) => {
 
     //commands
 
-    if(command === `rsnl`) {
-        message.channel.send(`You're doing great RSNL!`)
+//responses
+
+    const responses = [`You're doing great ${command}`, `You got this ${command}`, `If I were you I personally wouldn't let that slide ${command}`]
+    const randomChoice = (max) => {
+        return Math.floor(Math.random() * max);
+    }
+
+
+    if(command === `rsnl` || 'sami' || 'jotaro' || 'kira') {
+        message.channel.send(responses[randomChoice(responses.length)])
     }
 
     if(command === `sami`) {
