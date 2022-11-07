@@ -54,12 +54,12 @@ client.on("messageCreate", (message) => {
     console.log(responses[randomChoice(responses.length)])
 
 
-    if(command === `rsnl` || 'sami' || 'jotaro' || 'kira') {
+    if(command === `rsnl` || command === 'sami' || command === 'jotaro' || command === 'kira' || command === 'dante') {
         message.channel.send(responses[randomChoice(responses.length)])
     }
 
     if(command === `sami`) {
-        message.channel.send(`You doin anything later? You're kinda hot :nosebleedgirl: `)
+        message.channel.send(`You doin anything later? You're kinda hot`)
     }
 
 
