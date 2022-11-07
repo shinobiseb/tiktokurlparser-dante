@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": ">=16.9.0",
+    "node": ">=16.9.0"
   },
   "name": "tik-tok-parser",
   "version": "1.0.0",
