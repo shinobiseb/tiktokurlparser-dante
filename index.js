@@ -53,6 +53,7 @@ client.on("messageCreate", (message) => {
 
     console.log(responses[randomChoice(responses.length)])
 
+    //fun response command
 
     if(command === `rsnl` || command === 'sami' || command === 'jotaro' || command === 'kira' || command === 'dante') {
         message.channel.send(responses[randomChoice(responses.length)])
